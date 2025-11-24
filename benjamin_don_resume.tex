@@ -1,10 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% Website: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -91,100 +84,111 @@
 \end{tabular*}
 
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {California State Polytechnic University}{San Luis Obispo, CA}
-      {Bachelor of Science in Computer Science;  GPA: 3.4}{Sep. 2016 -- March. 2021}
-  \resumeSubHeadingListEnd
-
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Intuit}{Mountain View, CA}
-      {Software Engineer II, Quickbooks}{Sept 2021 - Present}
+      {Senior Software Engineer - Search}{Dec. 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Transaction History UI}
-          {Proposed and led the redesign effort for the Transaction History page.  Collected feedback from customers and worked closely with designers to create a better user experience.  Independently designed the application architecture- including which libraries to use, API calls, and overall code structure.}
-        \resumeItem{Quickbooks Search}
-          {Gained experience with Java and the Spring Framework implementing the backend functionality for the Quickbooks search bar.  .}
-        \resumeItem{QuickBooks Audit Log}
-          {Worked on decomposing the code base for our application from a Java monolith to a micro-service based approach.  Drove efforts to redesign our React based fronted to accompany our new backend.}
-        \resumeItem{Export To CSV}
-          {Customer obsession is one of my strengths.  During my tenure with the Audit Log team, I noticed that export to CSV was one of the most requested features by users.  I assessed the feasibility of implementing the feature, proposed an approach to my team, and went forward with creating the capability.  It now has many thousands of uses a day, and I have continued to support and optimize it since.}
-      
+        \resumeItemSingle{Built GraphQL-based Search Service using Kotlin and Spring Boot, unifying data access across QuickBooks microservices as the primary search backend serving 20M+ daily requests}
+        \resumeItemSingle{Engineered reactive service using Kotlin coroutines and optimized thread pools, reducing infrastructure costs by improving concurrent request handling with lower CPU/memory footprint}
+        \resumeItemSingle{Designed object-oriented search provider framework, accelerating feature velocity and enabling rapid integration of new search clients}
+        \resumeItemSingle{Architected intelligent cache invalidation system for search results using Valkey/ElastiCache, achieving 80\% latency reduction and 40\% hit rate while maintaining data consistency across dynamic entity updates}
+        \resumeItemSingle{Developed AI-powered semantic search capabilities enabling natural language query processing and complex search operations}
+        \resumeItemSingle{Created performance testing framework using WireMock to simulate faults and progressive load in pre-production, preventing incidents and enabling confident scaling}
+        \resumeItemSingle{Established CI/CD pipeline for weekly releases with comprehensive instrumentation and on-call alerting infrastructure}
+        \resumeItemSingle{Contributed to MCP-based agent for Claude that auto-generates Wavefront dashboards from application metrics, enabling engineers to bootstrap observability in minutes instead of hours}
       \resumeItemListEnd
 
     \resumeSubSubheading
-      {Software Engineer Intern}{June 2020 - September 2020}
+      {Software Engineer II - Search}{Jan. 2023 - Nov. 2024}
       \resumeItemListStart
-        \resumeItem{Mobile Web}
-          {Refactored front end code in QuickBooks to be mobile friendly, mainly using Javascript and CSS. }
+        \resumeItemSingle{Modernized QuickBooks search bar UI using React Hooks and responsive design, increasing search adoption by 30\% through improved user experience}
+        \resumeItemSingle{Designed and implemented full-stack self-service portal (React + Java REST API) during hackathon, enabling PMs to manage search routes and eliminating manual engineer uploads}
+        \resumeItemSingle{Architected AWS S3 data pipeline to migrate static search routes from legacy service to modern search backend}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Engineer - Audit Log}{Sep. 2021 - Dec. 2022}
+      \resumeItemListStart
+        \resumeItemSingle{Led Transaction History redesign as part of monolith-to-microservices migration, building React components for new backend architecture}
+        \resumeItemSingle{Built high-demand CSV export feature using parallel API requests and client-side aggregation, serving 10K+ daily users}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Engineer Intern}{Jun. 2020 - Sep. 2020}
+      \resumeItemListStart
+        \resumeItemSingle{Delivered mobile-first responsive UI improvements for QuickBooks web app}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Boeing / Tapestry Solutions}{San Luis Obispo, CA}
+      {Tapestry Solutions}{San Luis Obispo, CA}
       {Software Developer}{Jul. 2018 - Dec. 2019}
       \resumeItemListStart
-        \resumeItem{Web Application}
-          {Designed a React based web application to support military logistics operations.}
+        \resumeItemSingle{Built React-based inventory management system for military supply chain operations}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-
-   \resumeSubheading
-      {Ray Tracer}{}
-      {Written in C++.}{Sep. 2020 - Dec. 2020}
-      \resumeItemListStart
-        \resumeItemSingle {Implemented custom vector / math classes to support ray collisions.}
-        \resumeItemSingle {Supports OBJ files and multiple materials, from diffuse to refractive surfaces.}
-        \resumeItemSingle {Includes support for volume rendering through voxel data.}
-      \resumeItemListEnd
-
-         \resumeSubheading
-      {Lightspeed Breakout}{}
-      {Written in C++}{Apr. 2020 - Jun. 2020}
-      \resumeItemListStart
-        \resumeItemSingle {Created a stage sci-fi escape game, you play as an imprisoned passenger aboard a perilous space station.}
-        \resumeItemSingle {Worked with a team to create a game engine from scratch for the project.}
-        \resumeItemSingle {Gained experience with OpenGL, GLM, and GLSL for rendering, and irrKlang for audio.}
-        \resumeItemSingle {Implemented a quaternion based rotation scheme.}
-        \resumeItemSingle {Developed a 2D render system to support dynamic HUD elements.}
-      \resumeItemListEnd
-
-   \resumeSubheading
-      {Camp Redpines}{}
-      {Unity, Written in C Sharp}{Sep. 2020 - Mar. 2021}
-      \resumeItemListStart
-        \resumeItemSingle {Created a short game set in a campground with multiple activities, meant to relax the player.}
-        \resumeItemSingle {Developed with Unity's Universal Rendering Pipeline.}
-        \resumeItemSingle {Built custom shaders with Unity's shader graph interface.}
-        \resumeItemSingle {Worked with Blender to rig and animate 3D models.}
-
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-%
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}\small{: HTML/CSS/JavaScript, Java, Python, C/C++}
-     \hfill
-     \textbf{Technologies}\small{: React, Spring, ElasticSearch, GraphQL}
-   }
- \resumeSubHeadingListEnd
+  \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages:} Kotlin, Java, JavaScript/TypeScript, Python, SQL \\
+     \textbf{Frameworks \& Tools:} Spring Boot, React, Node.js, GraphQL, Elasticsearch, Redis, Docker \\
+     \textbf{Cloud \& DevOps:} AWS (S3, EC2, Lambda), Kubernetes, CI/CD Pipelines, Microservices Architecture
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {California State Polytechnic University}{San Luis Obispo, CA}
+    {Bachelor of Science in Computer Science}{Sep. 2016 -- Mar. 2021}
+\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
 \end{document}
+
+% %-----------PROJECTS (COMMENTED OUT)-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+% 
+%    \resumeSubheading
+%       {Ray Tracer}{}
+%       {Written in C++.}{Sep. 2020 - Dec. 2020}
+%       \resumeItemListStart
+%         \resumeItemSingle {Implemented custom vector / math classes to support ray collisions.}
+%         \resumeItemSingle {Supports OBJ files and multiple materials, from diffuse to refractive surfaces.}
+%         \resumeItemSingle {Includes support for volume rendering through voxel data.}
+%       \resumeItemListEnd
+% 
+%          \resumeSubheading
+%       {Lightspeed Breakout}{}
+%       {Written in C++}{Apr. 2020 - Jun. 2020}
+%       \resumeItemListStart
+%         \resumeItemSingle {Created a stage sci-fi escape game, you play as an imprisoned passenger aboard a perilous space station.}
+%         \resumeItemSingle {Worked with a team to create a game engine from scratch for the project.}
+%         \resumeItemSingle {Gained experience with OpenGL, GLM, and GLSL for rendering, and irrKlang for audio.}
+%         \resumeItemSingle {Implemented a quaternion based rotation scheme.}
+%         \resumeItemSingle {Developed a 2D render system to support dynamic HUD elements.}
+%       \resumeItemListEnd
+% 
+%   %  \resumeSubheading
+%   %     {Camp Redpines}{}
+%   %     {Unity, Written in C Sharp}{Sep. 2020 - Mar. 2021}
+%   %     \resumeItemListStart
+%   %       \resumeItemSingle {Created a short game set in a campground with multiple activities, meant to relax the player.}
+%   %       \resumeItemSingle {Developed with Unity's Universal Rendering Pipeline.}
+%   %       \resumeItemSingle {Built custom shaders with Unity's shader graph interface.}
+%   %       \resumeItemSingle {Worked with Blender to rig and animate 3D models.}
+% 
+%       % \resumeItemListEnd
+% 
+%   \resumeSubHeadingListEnd

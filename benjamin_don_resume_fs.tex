@@ -1,0 +1,165 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemSingle}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Benjamin Don} & Email : \href{mailto:bddon466@gmail.com}{bddon466@gmail.com}\\
+  \href{https://benjidon.github.io}{https://benjidon.github.io} & Mobile : +1-949-528-5631 \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\begin{flushleft}
+\small{
+Senior Full-Stack Engineer at Intuit with 5+ years building production applications and distributed systems. Deep expertise in React, TypeScript, and Kotlin/Spring Boot, delivering end-to-end features from user interface to scalable backend infrastructure.
+}
+\end{flushleft}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Intuit}{Mountain View, CA}
+      {Senior Software Engineer - Search}{Feb. 2025 - Present}
+      \resumeItemListStart
+        \resumeItemSingle{Built GraphQL-based Search Service using Kotlin and Spring Boot, unifying data access across QuickBooks microservices as the primary search backend serving 20M+ daily requests}
+        \resumeItemSingle{Engineered reactive service using Kotlin coroutines and optimized thread pools, reducing infrastructure costs by improving concurrent request handling with lower CPU/memory footprint}
+        \resumeItemSingle{Designed object-oriented search provider framework, accelerating feature velocity and enabling rapid integration of new search clients}
+        \resumeItemSingle{Architected intelligent cache invalidation system for search results using Valkey/ElastiCache, achieving 80\% latency reduction, 40\% hit rate, and reduced infrastructure costs}
+        \resumeItemSingle{Developed AI-powered semantic search using vector embeddings, enabling natural language query processing and complex search operations}
+        \resumeItemSingle{Created performance testing framework using WireMock to simulate faults and progressive load in pre-production, preventing incidents and enabling confident scaling}
+        \resumeItemSingle{Established CI/CD pipeline for weekly releases with comprehensive instrumentation and on-call alerting infrastructure}
+        \resumeItemSingle{Contributed to MCP-based agent for Claude that auto-generates Wavefront dashboards from application metrics, enabling engineers to bootstrap observability in minutes instead of hours}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Engineer II - Search}{Feb. 2023 - Jan. 2025}
+      \resumeItemListStart
+        \resumeItemSingle{Modernized QuickBooks search bar UI using React Hooks and responsive design, increasing search adoption by 30\% through improved user experience}
+        \resumeItemSingle{Designed and implemented full-stack self-service portal (React + Java REST API) during hackathon, enabling PMs to manage search routes and eliminating manual engineer uploads}
+        \resumeItemSingle{Architected AWS S3 data pipeline to migrate static search routes from legacy service to modern search backend}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Engineer - Audit Log}{Sep. 2021 - Jan. 2023}
+      \resumeItemListStart
+        \resumeItemSingle{Led Transaction History redesign as part of monolith-to-microservices migration, building React components for new backend architecture}
+        \resumeItemSingle{Built high-demand CSV export feature using parallel API requests and client-side aggregation, serving 10K+ daily users}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Engineer Intern}{Jun. 2020 - Sep. 2020}
+      \resumeItemListStart
+        \resumeItemSingle{Delivered mobile-first responsive UI improvements for QuickBooks web app}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tapestry Solutions}{San Luis Obispo, CA}
+      {Software Developer}{Jul. 2018 - Dec. 2019}
+      \resumeItemListStart
+        \resumeItemSingle{Built React-based inventory management system for military supply chain operations}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages:} JavaScript/TypeScript, Kotlin, Java, Python, SQL \\
+     \textbf{Frontend:} React, React Hooks, Responsive Design, Modern CSS \\
+     \textbf{Backend:} Spring Boot, Node.js, GraphQL, Elasticsearch, Redis, Microservices \\
+     \textbf{Cloud \& DevOps:} AWS (S3, EC2, Lambda), Kubernetes, Docker, CI/CD Pipelines
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {California State Polytechnic University}{San Luis Obispo, CA}
+    {Bachelor of Science in Computer Science}{Mar. 2021}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
